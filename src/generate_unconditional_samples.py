@@ -22,14 +22,14 @@ def sample_model(
     """
     Run the sample_model
     :model_name=124M : String, which model to use
-    :seed=None : Integer seed for random number generators, fix seed to
+    :seed=23 : Integer seed for random number generators, fix seed to
      reproduce results
     :nsamples=0 : Number of samples to return, if 0, continues to
      generate samples indefinately.
     :batch_size=1 : Number of batches (only affects speed/memory).
     :length=None : Number of tokens in generated text, if None (default), is
      determined by model hyperparameters
-    :temperature=1 : Float value controlling randomness in boltzmann
+    :temperature=10 : Float value controlling randomness in boltzmann
      distribution. Lower temperature results in less random completions. As the
      temperature approaches zero, the model will become deterministic and
      repetitive. Higher temperature results in more random completions.
